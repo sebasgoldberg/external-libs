@@ -1,7 +1,7 @@
 /*global QUnit*/
 
 sap.ui.define([
-    "sap/ui/demo/basicTemplate/model/formatter"
+    "cencosud/libs/external/model/formatter"
 ], function() {
     "use strict";
 

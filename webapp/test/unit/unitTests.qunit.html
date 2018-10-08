@@ -9,7 +9,7 @@
             src="../../resources/sap-ui-core.js"
             data-sap-ui-libs="sap.m"
             data-sap-ui-resourceroots='{
-				"sap/ui/demo/basicTemplate": "../../"
+				"cencosud/libs/external": "../../"
 			}'>
     </script>
 
@@ -23,7 +23,7 @@
 
 		sap.ui.getCore().attachInit(function () {
 			sap.ui.require([
-				"sap/ui/demo/basicTemplate/test/unit/allTests"
+				"cencosud/libs/external/test/unit/allTests"
 			], function() {
 				QUnit.start();
 			});

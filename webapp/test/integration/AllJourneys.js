@@ -7,7 +7,7 @@ sap.ui.define([
 
     Opa5.extendConfig({
         arrangements: new Arrangement(),
-        viewNamespace: "sap.ui.demo.basicTemplate.view.",
+        viewNamespace: "cencosud.libs.external.view.",
         autoWait: true
     });
 });
