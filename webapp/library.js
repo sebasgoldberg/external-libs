@@ -2,7 +2,7 @@
 import polyfill from "./lib/polyfill";
 
 let oLibrary = sap.ui.getCore().initLibrary({
-    name: "cencosud.libs.external.polyfill",
+    name: "iamsoft.libs.external.polyfill",
     noLibraryCSS: true,
 });
 
