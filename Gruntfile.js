@@ -13,13 +13,13 @@ module.exports = function(grunt) {
 
         connect: {
             options: {
-                port: 8082,
+                port: 7082,
                 hostname: "localhost"
             },
             src: {},
             dist: {
                 options: {
-                    port: 8081,
+                    port: 7081,
                 },
             },
             transp: {},
@@ -45,7 +45,7 @@ module.exports = function(grunt) {
                 files:[ {
                     expand: true,
                     cwd: "<%= dir.transp %>",
-                    src: ["manifest.json", "index.html", "**/*", ],
+                    src: ["**/*", ],
                     dest: "dist/",
                 }]
 
@@ -100,12 +100,12 @@ module.exports = function(grunt) {
                 options: {
                     resources: {
                         cwd: "transp",
-                        prefix: "sap/ui/demo/basicTemplate"
+                        prefix: "cencosud/libs/external/polyfill"
                     },
                     dest: "<%= dir.dist %>",
                     compatVersion: "1.52",
                 },
-                components: true
+                libraries: true
             }
         },
 
