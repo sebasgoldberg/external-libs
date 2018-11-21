@@ -11,7 +11,7 @@ The important parts here, are the following:
 import polyfill from "./lib/polyfill"; // Here is where are imported the babel polyfills resources.
 
 let oLibrary = sap.ui.getCore().initLibrary({
-    name: "iamsoft.libs.external.polyfill",
+    name: "custom.libs.external.polyfill",
     noLibraryCSS: true,
 });
 
@@ -21,7 +21,7 @@ export default oLibrary;
 - `manifest.json`: Here we tell to UI5 that we are defining a library.
 ```json
     "sap.app": {
-        "id": "iamsoft.libs.external.polyfill",
+        "id": "custom.libs.external.polyfill",
         "type": "library"
     }
 ```
@@ -33,7 +33,7 @@ export default oLibrary;
             options: {
                 resources: {
                     cwd: "transp",
-                    prefix: "iamsoft/libs/external/polyfill"
+                    prefix: "custom/libs/external/polyfill"
                 },
                 dest: "<%= dir.dist %>",
                 compatVersion: "1.52",

@@ -100,7 +100,7 @@ module.exports = function(grunt) {
                 options: {
                     resources: {
                         cwd: "transp",
-                        prefix: "iamsoft/libs/external/polyfill"
+                        prefix: "custom/libs/external/polyfill"
                     },
                     dest: "<%= dir.dist %>",
                     compatVersion: "1.52",
